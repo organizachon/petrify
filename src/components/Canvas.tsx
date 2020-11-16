@@ -5,7 +5,11 @@ import useWindowDimensions from "../hooks/useWindowsDimensions";
 const Canvas = () => {
   const { width, height } = useWindowDimensions();
   return (
-    <Paper width={width} height={height}>
+    <Paper
+      width={width}
+      height={height}
+      container={{ style: { "background-color": "blue" }, className: "dd" }}
+    >
       <Circle
         key={1}
         x={100}
